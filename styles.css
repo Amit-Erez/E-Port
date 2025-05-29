@@ -7,6 +7,14 @@
     font-family: 'Lato', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
 h1, h2, h3, h4, h5, h6, span {
     color: #242424;
     text-align: center;
@@ -75,7 +83,6 @@ nav {
 
 .nav__link--anchor {
     margin: 0 12px;
-    text-decoration: none;
     font-size: 16px;
     font-weight: 700;
     color: #242424;
@@ -151,7 +158,6 @@ nav {
 .about-me__link {
     font-size: 20px;
     color: black;
-    text-decoration: none;
     padding: 0 16px ;
 }
 
@@ -298,4 +304,61 @@ nav {
 {
     text-align: left;
     color: white;
+}
+
+/* FOOTER  */
+
+footer {
+    background-color: #242424;
+}
+
+.footer__logo {
+}
+
+.footer__logo--img {
+    width: 70x;
+    height: 70px;
+}
+
+.footer__row {
+    padding: 8% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__social--list {
+    margin-bottom: 28px;
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+    justify-content: space-around;
+}
+
+.footer__social--link,
+.footer__copyright,
+.footer__logo--popper {
+    color: white;
+}
+
+.footer__anchor {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.footer__logo--popper {
+    position: absolute;
+    right: 0;
+    top: 30px;
+    font-weight: 600;
+    opacity: 0;
+    color: #242424;
+    transition: all 300ms ease;
+}
+
+.footer__anchor:hover .footer__logo--popper {
+   transform: translateX(60px); 
+   opacity: 1;
+   color: #fff;
 }
