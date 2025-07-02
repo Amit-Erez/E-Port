@@ -136,6 +136,7 @@ nav {
 }
 
 
+
 /* ABOUT ME  */
 
 #about-me {
@@ -407,8 +408,8 @@ footer {
 }
 
 .footer__logo--img {
-    width: 70x;
-    height: 70px;
+    height: 56px;
+    filter: invert(1);
 }
 
 .footer__row {
@@ -441,7 +442,7 @@ footer {
 .footer__logo--popper {
     position: absolute;
     right: 0;
-    top: 30px;
+    top: 20px;
     font-weight: 600;
     opacity: 0;
     color: #242424;
